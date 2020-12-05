@@ -1,0 +1,7 @@
+name: 'CustomInfo'
+type: module
+description: 'Create JSON Reponse for basic page by validating Sitekey'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:serialization

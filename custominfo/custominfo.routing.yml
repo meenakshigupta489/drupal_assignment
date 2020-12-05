@@ -1,0 +1,10 @@
+custominfo.nodeinfo:
+  path: '/page_json/{sitekey}/{node}'
+  defaults:
+    _controller: '\Drupal\custominfo\Controller\ExampleController::content'
+  requirements: 
+    _custom_access: '\Drupal\custominfo\Controller\ExampleController::access'
+  options:
+    parameters:
+      node:
+        type: 'entity:node'

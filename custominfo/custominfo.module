@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains custominfo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function custominfo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the custominfo module.
+    case 'help.page.custominfo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Create JSON Reponse for basic page by validating Sitekey.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
